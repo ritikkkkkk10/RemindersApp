@@ -39,7 +39,7 @@ class GeneralInfoFragment : Fragment() {
         //below is a one line to that when you click on it, it will show the previous entered data in the entry box
         dialogBinding.editTextValue.setText(preferences.getString(preferenceKey, null))
         MaterialAlertDialogBuilder(requireContext())
-            .setTitle("Update Value")
+            .setTitle("Update Valuee")
             .setView(dialogBinding.root)
             .setPositiveButton("Save") {_, _ ->
                 preferences.edit { putString(preferenceKey, dialogBinding.editTextValue.text?.toString()) }
