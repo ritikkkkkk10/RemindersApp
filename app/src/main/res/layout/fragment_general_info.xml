@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="24dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_view_thought"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_view_thought"
+                    android:src="@drawable/baseline_settings_system_daydream_24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/text_view_thought_heading"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/image_view_thought"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_height="wrap_content"
+                    android:text="Thought for the day"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_view_thought_value"
+                    android:textColor="@color/grey"
+                    tools:text="MyWifiPassword"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_thought_heading"
+                    app:layout_constraintStart_toStartOf="@id/text_view_thought_heading"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_view_account_pin"
+            android:layout_width="match_parent"
+            android:layout_marginTop="24dp"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_view_account_pin"
+                    android:src="@drawable/baseline_account_balance_24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/text_view_account_pin_heading"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/image_view_account_pin"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_height="wrap_content"
+                    android:text="Account Pin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_view_account_pin_value"
+                    android:textColor="@color/grey"
+                    tools:text="MyWifiPassword"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_account_pin_heading"
+                    app:layout_constraintStart_toStartOf="@id/text_view_account_pin_heading"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_view_email"
+            android:layout_width="match_parent"
+            android:layout_marginTop="24dp"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/image_view_email"
+                    android:src="@drawable/baseline_email_24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/text_view_email_heading"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/image_view_email"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_height="wrap_content"
+                    android:text="My Email"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_view_email_value"
+                    android:textColor="@color/grey"
+                    tools:text="MyWifiPassword"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_email_heading"
+                    app:layout_constraintStart_toStartOf="@id/text_view_email_heading"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
